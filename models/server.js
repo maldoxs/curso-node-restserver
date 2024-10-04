@@ -5,7 +5,7 @@ class Server {
     constructor() {
         // Inicializamos las propiedades en el constructor
         this.app = express();
-        this.port = process.env.PORT;
+        this.port = process.env.PORT || 3000;
         this.usuariosParh = "/api/usuarios";
 
         //Middlewares
